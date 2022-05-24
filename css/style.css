@@ -1,0 +1,593 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+html{
+
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=84405), auto;
+}
+
+
+body{
+    font-size: 20px;
+    overflow-x:hidden;
+    font-family: 'Lobster', cursive;
+}
+
+
+#glavni{
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../slike/pozadina.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 96vh;
+
+}
+
+#oNama{
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../slike/pozadina.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 100vh;
+
+}
+
+#kontakt{
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../slike/pozadina.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 96vh;
+
+}
+
+
+
+.uvodni{
+    background-image:url('../slike/onama2.jpg');
+    padding: 7rem 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 100vh;
+   
+}
+
+h3{
+    color:rgb(0, 0, 0);
+    font-size:170%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    font-weight: lighter;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+ 
+}
+
+h4{
+    color:rgb(0, 0, 0);
+    font-size:150%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    font-weight: lighter;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+ 
+}
+
+
+
+.clearfix:after{
+    content: ",";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear:both;
+}
+
+.row{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo{
+    height: 200px;
+    width: auto;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.logo:hover{
+   
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.meni{
+    float: right;
+    margin-top: 60px;
+}
+
+.meni li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.meni li a{
+    padding:  5px 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 90%;
+    font-weight: 100;
+}
+
+.meni li a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+
+.sadrzaj{
+    width: 1200px;
+    position: absolute;    
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.sadrzaj a{
+    text-decoration: none;
+    font-size:90%;
+}
+
+
+.uvod{
+
+    width: 1200px;
+    position: absolute;    
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.divider{
+    padding: 11rem 0;
+    background-image:  url(slike/donut.gif);
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: -10rem;
+  }
+
+h1{
+    color:#fff;
+    font-size:240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+ 
+}
+
+.dugme-celo{
+    background-color: transparent;
+    color: #fff;
+    margin-right: 15px;
+    border: 2px solid #fff;
+    border-radius: 12px;
+}
+
+.dugme-celo:hover{
+    background-color: #45bec5;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.promenaBoje{
+    animation: colorchange 3s infinite;
+}
+
+
+@keyframes colorchange {
+    0%{color:#f3807f;}
+    25%{color:#ffb9ac;}
+    50%{color: #fff;}
+    100%{color: #ffb9ac;}
+}
+
+
+/* Responzivnost */
+@media only screen and (max-width: 1200px){
+    .sadrzaj{
+        width: 100%;
+        padding: 0 2%;
+        
+    }
+
+    .uvod{
+
+        width: 100%;
+        padding: 0 2%;
+    }
+    .divider{
+        height: 140px;
+        width: auto;
+    }
+
+    .meni{margin-right: 2%};
+}
+
+@media only screen and (max-width: 992px){
+    h1{font-size: 200%;}
+    h3{font-size: 140%;}
+    h4{font-size: 110%;}
+    .meni{margin-right: 2%};
+
+   
+}
+
+@media only screen and (max-width: 768px){
+    h1{font-size: 160%;}
+    h3{font-size: 100%;}
+    h4{font-size: 80%;}
+    .logo{
+        height: 140px;
+        width: auto;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px){
+  
+    h1{font-size: 140%;}
+    h3{font-size: 80%;}
+    h4{font-size: 60%;}
+    .meni{
+        margin-right: 30px;
+        float: right;
+       
+
+}
+.meni li{
+    display: block;
+    margin-top: 5px;
+
+}
+}
+
+
+footer{
+    text-align: center;
+    padding-top: 2px;
+    box-sizing: border-box;
+}
+
+
+
+
+#kontakt_stavke{
+   
+    font-size: 16px;
+    padding: 15px 30px;
+}
+
+
+.wrapper{
+
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.kontaktirajte_nas{
+    width: 100%;
+    max-width: 5oopx;
+    height: auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 4opx 50px;
+    border-radius: 5px;
+
+}
+
+.title{
+    font-size: 2em;
+    line-height: 1.25em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #ffb9ac;
+    padding-bottom: 15px;
+
+}
+
+.wrapper .stavke{
+width: 100%;
+padding-bottom: 15px;
+
+}
+
+.wrapper .stavke .label{
+
+    display: block;
+    font-size: 1em;
+    color: #ffb9ac;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+}
+
+.wrapper .stavke .input, 
+.wrapper .stavke .text-area{
+
+    background: transparent;
+    border: 0;
+    border:  1px solid #fff;
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 1em;
+    color: #ffb9ac;
+    border-radius: 3px;
+}
+
+.wrapper input[type="submit"]{
+
+    font-family: 'Lobster', cursive;
+    margin: 0;
+    background: #baf1ea;
+    color: #000000;
+    font-size: 1.25em;
+    padding: 8px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 2px; 
+    width: 100%;
+
+}
+
+.stavke #poruka{
+
+    height: 100px;
+
+}
+
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px;
+    right: 30px; 
+    z-index: 99;
+    border: none; 
+    outline: none; 
+    background-color: #baf1ea;
+    color: rgb(0, 0, 0); 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+    font-family: 'Lobster', cursive;
+}
+
+#myBtn:hover {
+    background-color: #555; 
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+.modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: papayawhip;
+    color: black;
+}
+
+.modal-body {
+    padding: 2px 16px;
+    background: url(slike/mapa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 70vh;
+
+
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: peachpuff;
+    color: white;
+}
+
+/* Animation */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+#btnLoc{
+    background-color: white;
+    color: black;
+    border: 2px solid#555555;
+    border-radius: 12px;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    font-size: 18px; 
+    font-family: 'Lobster', cursive;
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px;
+    position: fixed; 
+    top: 20px;
+    left: 30px; 
+    z-index: 99;
+    outline: none;  
+}
+    
+ #btnLoc:hover {
+    background-color: #555555;
+        color: white;
+    }
+
+
+
+
+
+
+    .music-player {
+        width: 75px;
+        height: 50px;
+        position: relative;
+        opacity: 1;
+        transition: opacity 200ms;
+      }
+      .music-player.music-player--disabled {
+        opacity: 0.26;
+      }
+      .music-player__wrapper {
+        position: fixed;
+        right: 2rem;
+        bottom: 1.5rem;
+      }
+      .music-player__button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: transparent;
+        z-index: 1;
+        width: 100%;
+        border: 0;
+      }
+      .music-player__play {
+        background: transparent;
+        display: none;
+      }
+      .music-player--disabled .music-player__play {
+        display: block;
+      }
+      .music-player--disabled .music-player__pause {
+        display: none;
+      }
+      .music-player__bar {
+        background: #fff;
+        width: 10px;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        animation-name: music-bar-anim;
+        animation-iteration-count: infinite;
+      }
+      .music-player--disabled .music-player__bar {
+        animation-play-state: paused;
+      }
+      .music-player__bar1 {
+        animation-duration: 1.3s;
+        left: 0;
+      }
+      .music-player__bar2 {
+        animation-duration: 1.8s;
+        left: 15px;
+      }
+      .music-player__bar3 {
+        animation-duration: 2.2s;
+        left: 30px;
+      }
+      .music-player__bar4 {
+        animation-duration: 2s;
+        left: 45px;
+      }
+      .music-player__bar5 {
+        animation-duration: 1.5s;
+        left: 75px;
+      }
+      @keyframes music-bar-anim {
+        0% {
+          height: 10px;
+        }
+        50% {
+          height: 50px;
+        }
+        100% {
+          height: 10px;
+        }
+      }
+      .sr-only {
+        clip: rect(1px, 1px, 1px, 1px);
+        height: 1px;
+        overflow: hidden;
+        position: absolute !important;
+        width: 1px;
+      }
+
+  
